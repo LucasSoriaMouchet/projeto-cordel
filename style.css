@@ -5,51 +5,53 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
     background-color: black;
     color: white;
-}
-
-header h1{
-    font-size: 6em;
-    margin: 0px;
     text-align: center;
 }
 
-header a{
-    color: white;
-    text-decoration: none;
+header h1{
+    font-variant: small-caps;
+    padding-top: 50px;
 }
 
-header a:hover{
+header p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-#bg-flor{
-    height: 600px;
-    background-image: url('imagens/background001.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+section{
+    line-height: 2em;
+    padding: 10vh 0px 10vh 30px;
 }
 
-#bg-flor p{
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: gray;
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.26);
     color: white;
-    background-color: rgba(0, 0, 0, 0.473);
-    width: 400px;
-}
-
-#bg-livro{
-    height: 600px;
-    background-image: url('imagens/background002.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-#bg-livro p{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.473);
     width: 400px;
 }
 
@@ -58,15 +60,4 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
-    font-size: 1.2em;
-}
-
-footer a{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover{
-    text-decoration: underline;
 }
